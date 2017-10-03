@@ -1,0 +1,37 @@
+/*Staring page*/
+body{
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+#startimg{
+    width: 100%;
+    display:block;
+    margin: 0;
+    padding: 25px;
+}
+#euscher{
+    width: 100%;
+    display:block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+input[type=button]{
+    width: 240px;
+    height: 240px;
+    display:table;
+    border-radius: 50%;
+    background-color: white;
+    border: solid 2px black;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin:0;
+    top:50%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%, -50%);
+}
