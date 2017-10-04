@@ -7,18 +7,21 @@
 
 #body {
     width: 100%;
-    /*height: 100vh;*/
+    height: 100vh;
     margin: 0;
     overflow: hidden;
 }
 
 /*Image styling*/
 #startimg {
-    width: 100%;
     display: block;
     margin: 0;
-    padding: 25px;
-    height: 100vh;
+    background: url("../IMG/startim.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
 }
 
 #euscher {
@@ -33,8 +36,8 @@
     background-position: left top;
     background-size: cover !important;
     height: 100%;
+    opacity:0;
 }
-
 /*button styling*/
 input[type=button] {
     position: absolute;
@@ -46,10 +49,10 @@ input[type=button] {
     border-radius: 50%;
     background-color: white;
     border: solid 2px black;
-    font-size: 25px;
+    font-size: 200%;
     font-family: 'Merriweather', serif;
     font-weight: bold;
-    line-height:0;
+    line-height: 0;
     text-transform: uppercase;
     margin: 0;
     top: 50%;
@@ -58,10 +61,21 @@ input[type=button] {
     transform: translate(-50%, -50%);
     transition: 500ms;
 }
-
-input[type=button]:hover {
+input[type=button]:hover{
     background-color: black;
-    color: white;
+    color:white;
     border: solid 2px white;
+    transition: 500ms;
+}
+
+#startimg:hover{
+    display: block;
+    margin: 0;
+    background: url("../IMG/startimeffects.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
     transition: 500ms;
 }
