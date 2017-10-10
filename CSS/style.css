@@ -65,3 +65,14 @@
     font-size:2vw;
     transition: 500ms;
 }
+
+#slideto{
+    height: 100vh;
+}
+#menu{
+    width:100vw;
+    background-color: aqua;
+    margin:0;
+    display:none;
+    position:fixed;
+}
