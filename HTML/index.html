@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Project Illusions</title>
-    <link rel="script" href="../JS/jquery-3.2.1.min.js">
-    <link rel="script" href="../JS/js.js" type="text/html">
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/js.js"></script>
     <link rel="stylesheet" href="../CSS/style.css" type="text/css">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body id="body">
-<input id="getstartedBTN" type="button" value="Get Started">
+<div id="menu">
+    <a class="listitem">test</a>
+    <a class="listitem">test</a>
+</div>
+
+<input id="getstartedBTN" type="button" value="Get Started" onclick="scrollToAnchor('slideto', 0);"/>
 <header id="startimg">
 
 </header>
-<div id="buttoncontainer">
-
+<div id="slideto">
+    <input type="button" value="Bacc" id='backButton'/>
 </div>
 </body>
+
 </html>
