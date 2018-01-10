@@ -57,3 +57,10 @@ $(document).ready(function () {
         }, 2000);
     });
 });
+function openNav() {
+    document.getElementById("menu").style.width = "30vw";
+}
+
+function closeNav() {
+    document.getElementById("menu").style.width = "0";
+}
