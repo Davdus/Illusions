@@ -16,7 +16,7 @@ $(document).ready(function () {
         console.log(menuhidden);
         if(menuhidden === false) {
             body.css({"overflow": "hidden"});
-            menu.css({"position": "absolute", "top": $(this).scrollTop()});
+            menu.css({"position": "absolute", "top": $(this).scrollTop()    });
             menu.fadeIn(500);
         }
     }
