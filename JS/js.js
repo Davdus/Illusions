@@ -11,6 +11,7 @@ function scrollToAnchor(aid, aidOffset) {
 $(document).ready(function () {
     var menu = $('#menu');
     var body = $('#body');
+    var closeBTN = $('#closeBTNIMG');
 
     function scrollTopHigh(){
         console.log(menuhidden);
@@ -18,11 +19,13 @@ $(document).ready(function () {
             body.css({"overflow": "hidden"});
             menu.css({"position": "absolute", "top": $(this).scrollTop()    });
             menu.fadeIn(500);
+            closeBTN.fadeIn(500);
         }
     }
 
     function scrollTopHigherThanBody(){
-        menu.css({"position": "relative", "backgroundColor": "yellow"});
+        menu.css({"position": "relative", "background-color": "yellow"});
+        closeBTN.css({"display":"block"});
     }
 
     function scrollTopLow(){
@@ -40,7 +43,7 @@ $(document).ready(function () {
         }
 
         if ($(this).scrollTop() > $('#slideto').scrollTop()){
-            body.css({"overflow": "auto"});
+            body.css({"overflow-y": "auto"});
         } else {
             body.css({"overflow": "hidden"});
         }
