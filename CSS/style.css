@@ -8,10 +8,10 @@
 }
 
 .infoblock{
-    width: 40%;
+    width: 60%;
     background-color: black;
     color: lightgray;
-    margin: 10% 20% 10% 20%;
+    padding: 0 20% 0 20%;
 }
 
 /*Staring page*/
