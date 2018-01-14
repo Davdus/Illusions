@@ -147,7 +147,7 @@ a.listitem:hover{
     color: black;
 }
 #parallax{
-    background-image: url("../IMG/Hermann's_Grid_illusion.png");
+    background-image: url("../IMG/Hermann_s_Grid_illusion.png");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -157,4 +157,21 @@ a.listitem:hover{
 .backgroundImages{
     width: 100vw;
     height: 100vh;
+}
+
+/* Optical Illusions */
+.Literal{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.Physical{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.Cognitive{
+    background-color: white;
+    width: 100%;
+    height: auto;
 }
