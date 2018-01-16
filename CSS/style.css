@@ -1,15 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
-/*Staring page*/
-
-:root {
-    --buttonStartedWidth: 14%;
-}
-
+/*General*/
 #body {
     width: 100%;
     height: 100vh;
     margin: 0;
     overflow: hidden;
+}
+
+.infoblock {
+    width: 60%;
+    background-color: white;
+    color: black;
+    padding: 0 20% 0 20%;
+}
+
+.exImg {
+    width: 10%;
+    height: 10%;
+    float: right;
+
+}
+p1{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*Staring page*/
+
+:root {
+    --buttonStartedWidth: 14%;
 }
 
 /*Image styling*/
@@ -37,7 +56,7 @@
     background-color: white;
     border: solid 2px white;
     font-size: 1.75vw;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Merriweather', serif;
     font-weight: bold;
     line-height: 0;
     text-transform: uppercase;
@@ -50,40 +69,48 @@
     outline: none;
 }
 
-#getstartedBTN:hover ~ #startimg{
-    margin:0;
+#getstartedBTN:hover ~ #startimg {
+    margin: 0;
     background: url("../IMG/startimeffects.png") no-repeat center center;
     background-size: cover !important;
     width: 100%;
     height: 100%;
 }
 
-#getstartedBTN:hover{
+#getstartedBTN:hover {
     --buttonStartedWidth: 15.5%;
     /*background-color: black;*/
-    border:solid 2px black;
-    font-size:2vw;
+    border: solid 2px black;
+    font-size: 2vw;
     transition: 500ms;
 }
-#parallax{
+
+#slideto {
+    height: 100vh;
     z-index: -1;
+    display: block;
 }
-#menu{
-    height:100%;
+
+#menu {
+    height: 100%;
     width: 0;
     background-color: black;
-    margin:0;
-    display:flex;
+    margin: 0;
+    display: flex;
     flex-direction: column;
-    position:absolute;
-    transition: 0.4s;
+    position: absolute;
+
     overflow-x: hidden;
+    top: 0;
+    left: 0;
 }
-#menusSliderButton{
-    width:4vw;
+
+#menusSliderButton {
+    width: 4vw;
     height: 100vh;
 }
-#arrowRight{
+
+#arrowRight {
     width: 4vh;
     height: 4vh;
     position: fixed;
@@ -91,16 +118,19 @@
     top: 50%;
     transition: 400ms;
 }
-img#arrowRight:hover{
+
+img#arrowRight:hover {
     width: 6vh;
     height: 6vh;
 }
-#closeBTN{
+
+#closeBTN {
     width: inherit;
     padding: 10px;
     margin-bottom: 15%;
 }
-#closeBTNIMG{
+
+#closeBTNIMG {
     width: 4vh;
     height: 4vh;
     transition: 0.4s;
@@ -108,11 +138,13 @@ img#arrowRight:hover{
     float: right;
     left: 85%;
 }
-#closeBTNIMG:hover{
+
+#closeBTNIMG:hover {
     width: 6vh;
     height: 6vh;
 }
-.listitem{
+
+.listitem {
     width: 5vw;
     height: 2.5vh;
     background-color: black;
@@ -126,36 +158,47 @@ img#arrowRight:hover{
     vertical-align: center;
     transition: all 0.3s;
 }
-#first{
+
+#first {
     margin: 1.5vh 0 1.5vh 2px;
 }
-a.listitem:hover{
+
+a.listitem:hover {
     background-color: white;
     color: black;
 }
-#parallax{
-    background-image: url("../IMG/Hermann's_Grid_illusion.png");
+
+#parallax {
+    background-image: url("../IMG/Hermann_s_Grid_illusion.png");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.backgroundImages{
+
+.backgroundImages {
     width: 100vw;
     height: 100vh;
 }
-#Intro{
-    width: 100%;
-    background-color: whitesmoke;
-}
-#welcome{
-    width:75%;
-    color: black;
-    float: left;
-    background-color: whitesmoke;
 
+/* Optical Illusions
+
+.Literal{
+    background-color: white;
+    width: 100%;
+    height: auto;
 }
-.headlines{
-    font-family: 'Oxygen', sans-serif;
+
+.Physical{
+    background-color: white;
+    width: 100%;
+    height: auto;
 }
+
+.Cognitive{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+*/
