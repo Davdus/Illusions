@@ -56,7 +56,7 @@ p1{
     background-color: white;
     border: solid 2px white;
     font-size: 1.75vw;
-    font-family: 'Merriweather', serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     line-height: 0;
     text-transform: uppercase;
@@ -175,6 +175,7 @@ a.listitem:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .backgroundImages {

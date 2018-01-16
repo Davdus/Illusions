@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
 
     function scrollTopHigherThanBody(){
-        menu.css({"position": "relative", "background-color": "yellow"});
+        menu.css({"position": "absolute", "background-color": "yellow"});
         closeBTN.css({"display":"block"});
     }
 
@@ -42,7 +42,7 @@ $(document).ready(function () {
             scrollTopLow();
         }
 
-        if ($(this).scrollTop() > $('#slideto').scrollTop()){
+        if ($(this).scrollTop() > $('#parallax').scrollTop()){
             body.css({"overflow-y": "auto"});
         } else {
             body.css({"overflow": "hidden"});
