@@ -37,7 +37,7 @@
     background-color: white;
     border: solid 2px white;
     font-size: 1.75vw;
-    font-family: 'Merriweather', serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     line-height: 0;
     text-transform: uppercase;
@@ -65,11 +65,8 @@
     font-size:2vw;
     transition: 500ms;
 }
-
-#slideto{
-    height: 100vh;
+#parallax{
     z-index: -1;
-    display: block;
 }
 #menu{
     height:100%;
@@ -147,4 +144,18 @@ a.listitem:hover{
 .backgroundImages{
     width: 100vw;
     height: 100vh;
+}
+#Intro{
+    width: 100%;
+    background-color: whitesmoke;
+}
+#welcome{
+    width:75%;
+    color: black;
+    float: left;
+    background-color: whitesmoke;
+
+}
+.headlines{
+    font-family: 'Oxygen', sans-serif;
 }
