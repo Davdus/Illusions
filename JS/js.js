@@ -11,21 +11,19 @@ function scrollToAnchor(aid, aidOffset) {
 $(document).ready(function () {
     var menu = $('#menu');
     var body = $('#body');
-    var closeBTN = $('#closeBTNIMG');
 
     function scrollTopHigh(){
         console.log(menuhidden);
         if(menuhidden === false) {
-            body.css({"overflow": "hidden"});
-            menu.css({"position": "absolute", "top": $(this).scrollTop()    });
+            body.css({"overflow": "auto"});
+            menu.css({"position": "absolute", "top": $(this).scrollTop(),"display":"flex"});
             menu.fadeIn(500);
             closeBTN.fadeIn(500);
         }
     }
 
     function scrollTopHigherThanBody(){
-        menu.css({"position": "absolute", "background-color": "yellow"});
-        closeBTN.css({"display":"block"});
+        menu.css({"position": "absolute"});
     }
 
     function scrollTopLow(){
