@@ -8,10 +8,11 @@
 }
 
 .infoblock {
-    width: 60%;
+    width: 80%;
     background-color: white;
     color: black;
-    padding: 0 20% 0 20%;
+    padding: 30px 0 30px 0;
+    margin: 5% 0 5% 0;
 }
 
 .exImg {
@@ -21,7 +22,7 @@
 
 }
 p1{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -167,7 +168,7 @@ a.listitem:hover {
 }
 
 #parallax {
-    background-image: url("../IMG/Hermann_s_Grid_illusion.png");
+    background-image: url("../IMG/Background1.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
