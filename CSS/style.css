@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 /*General*/
-html{
+html {
     font-family: 'Oxygen', sans-serif;
 }
+
 .clearfix {
     overflow: auto;
 }
+
 #body {
     width: 100%;
     height: 100vh;
@@ -26,6 +28,7 @@ html{
     height: 10%;
     float: right;
 }
+
 /*Staring page*/
 
 :root {
@@ -87,15 +90,16 @@ html{
 }
 
 #menu {
-    width: 100%;
+    width: 99%;
     background-color: black;
     margin: 0;
     display: none;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     position: absolute;
     overflow-x: hidden;
     z-index: 2000;
+    padding: 0.5%;
     top: 0;
     left: 0;
     transition-delay: 0s;
@@ -107,16 +111,26 @@ html{
     background-color: black;
     border-radius: 4px;
     color: whitesmoke;
-    size: 5em;
+    font-weight: bolder;
+    cursor:pointer;
+    size: 7em;
     border: solid whitesmoke 2px;
     padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.5vh 2px 1.5vh 2px;
+    margin: 1% 1.2% 1% 1.2%;
     text-align: center;
     vertical-align: center;
     transition: all 0.3s;
+}
+
+#logo {
+    width: 7%;
+    height: 7%;
+    margin: 0 39% 0 1%;
+    border-radius: 5px;
+    cursor:pointer;
 }
 
 #first {
@@ -223,6 +237,7 @@ footer {
 .linkedin {
     background: #4875b4 none repeat scroll 0 0;
 }
+
 #overlay {
     background-color: rgba(0, 0, 0, 0.7);
     top: 0;
@@ -232,19 +247,22 @@ footer {
     position: relative;
     z-index: 1;
 }
-.transitions{
+
+.transitions {
     width: 80%;
     height: 80%;
     background-color: transparent;
     padding: 20%;
 }
-.bigheadings{
-    font-size: 100px;
+
+.bigheadings {
+    font-size: 6.250em;
     font-weight: bolder;
     color: whitesmoke;
     margin: 0;
 }
-#backtostartBTN{
-    width:10%;
+
+#backtostartBTN {
+    width: 10%;
     margin: auto;
 }
