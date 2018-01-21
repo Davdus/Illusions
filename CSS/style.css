@@ -21,7 +21,8 @@
     float: right;
 
 }
-p1{
+
+p{
     font-size: 15px;
     font-weight: bold;
 }
@@ -102,6 +103,38 @@ p1{
     overflow-x: hidden;
     top: 0;
     left: 0;
+}
+
+#welcomeBox {
+    width: auto;
+    margin: auto;
+}
+
+#welcome {
+    width: auto;
+    margin: 1%;
+    text-align: center;
+
+}
+
+#tableOfContent {
+    margin: auto;
+    text-align: center;
+    border-spacing: 20px;
+}
+
+#contentTable {
+    width: auto;
+    margin: 1%;
+    text-align: center;
+}
+
+.visualIllusions {
+    margin: 1%;
+}
+
+.auditoryllusions {
+    margin: 1%;
 }
 
 #menusSliderButton {

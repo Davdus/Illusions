@@ -18,7 +18,6 @@ $(document).ready(function () {
             body.css({"overflow": "auto"});
             menu.css({"position": "absolute", "top": $(this).scrollTop(),"display":"flex"});
             menu.fadeIn(500);
-            closeBTN.fadeIn(500);
         }
     }
 
