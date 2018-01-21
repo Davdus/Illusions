@@ -58,6 +58,9 @@ $(document).ready(function () {
         }, 2000);
     });
 });
+function backgroundchange(position, backgroundimage){
+    var wrapper= $('parallax');
+}
 function openNav() {
     document.getElementById("menu").style.width = "30vw";
 }

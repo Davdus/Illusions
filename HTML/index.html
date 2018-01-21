@@ -12,22 +12,20 @@
 </head>
 <body id="body">
 <div id="menu">
-    <a class="listitem" id="first">Start</a>
-    <a class="listitem">Optical Illusions</a>
-    <a class="listitem">Physiological Illusions</a>
-    <a class="listitem">Literal Illusions</a>
-    <a class="listitem">Cognitive Illusions</a>
-    <a class="listitem">Auditory Illusions</a>
+    <a class="listitem" onclick="scrollToAnchor('optical', 1)">Optical Illusions</a>
+    <a class="listitem" onclick="scrollToAnchor('physiological', 1)">Physiological Illusions</a>
+    <a class="listitem" onclick="scrollToAnchor('literal', 1)">Literal Illusions</a>
+    <a class="listitem" onclick="scrollToAnchor('cognitive', 1)">Cognitive Illusions</a>
+    <a class="listitem" onclick="scrollToAnchor('auditory', 1)">Auditory Illusions</a>
 </div>
 <input id="getstartedBTN" type="button" value="Get Started" onclick="scrollToAnchor('parallax', 0);"/>
 <header id="startimg">
 </header>
 <div id="parallax">
     <div id="overlay">
-        <div class="transitions"><p class="bigheadings">Welcome to the world of illusions!</p></div>
+        <div class="transitions" id="start"><p class="bigheadings">Welcome to the world of illusions!</p></div>
         <div id="welcome">
             <div class="infoblock clearfix">
-
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                     Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                     Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
@@ -38,9 +36,6 @@
                     nisi. Aenean vulputate eleifend tellus.
                     Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
                     viverra quis, feugiat a,</p>
-            </div>
-        </div>
-        <div class="infoblock clearfix">
             <h2>Table of content</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                 Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -48,14 +43,16 @@
                 enim. Donec pede justo,
                 fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
                 vitae,</p>
+            </div>
         </div>
-        <div class="transitions"><p class="bigheadings">Visual Illusions</p></div>
+        <div class="transitions" id="optical"><p class="bigheadings">Optical Illusions</p></div>
         <div class="infoblock clearfix">
             <h1>Optical Illusions</h1>
             <p>Optical illusions can generally be segmented into three groups: physical illusions, literal
                 illusions,
                 and cognitive illusions</p>
         </div>
+        <div class="transitions" id="physiological"><p class="bigheadings">Physiological Illusions</p></div>
         <div class="infoblock clearfix">
             <img src="../IMG/New_Hermann_s_Grid_illusion.jpg" class="exImg">
             <h2>Physiological Illusions</h2>
@@ -89,6 +86,7 @@
                 venenatis
                 vitae,</p>
         </div>
+        <div class="transitions" id="literal"><p class="bigheadings">Literal Illusions</p></div>
         <div class="infoblock clearfix">
             <h2>Literal Illusions</h2>
             <p>When the mind receives visual information, it will fill in details or gaps that do not actually
@@ -108,7 +106,7 @@
                 vitae,</p>
             <img src="../IMG/OldCoupleVisualIllusion.Jpg" class="exImg">
         </div>
-        <img src="../IMG/Kanizsa_s_Triangle.png" class="exImg">
+        <div class="transitions" id="cognitive"><p class="bigheadings">Cognitive Illusions</p></div>
         <div class="infoblock clearfix">
             <h2>Cognitive Illusions</h2>
             <p>
@@ -151,7 +149,9 @@
                 a single observer,
                 such as those induced by schizophrenia or hallucinogenic drugs.
             </p>
+            <img src="../IMG/Kanizsa_s_Triangle.png" class="exImg">
         </div>
+        <div class="transitions" id="auditory"><p class="bigheadings">Auditory Illusions</p></div>
         <div class="infoblock clearfix">
             <h1>Auditory Illusions</h1>
 
