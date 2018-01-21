@@ -46,7 +46,7 @@ p{
     transition: 500ms;
 }
 
-/*button styling*/
+/*button styling Start*/
 #getstartedBTN {
     position: absolute;
     display: inline-block;
@@ -87,6 +87,8 @@ p{
     transition: 500ms;
 }
 
+
+/* Button styling menu */
 #slideto {
     height: 100vh;
     z-index: -1;
@@ -200,6 +202,13 @@ a.listitem:hover {
     color: black;
 }
 
+/* main */
+
+.emptybox {
+    width: 100%;
+    height: 600px;
+}
+
 #parallax {
     background-image: url("../IMG/Background1.jpg");
     min-height: 500px;
@@ -209,6 +218,27 @@ a.listitem:hover {
     background-size: cover;
     font-family: 'Oxygen', sans-serif;
 }
+
+/* Optical Illusions
+
+.Literal{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.Physical{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.Cognitive{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+*/
 
 .backgroundImages {
     width: 100vw;
