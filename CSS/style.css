@@ -94,7 +94,7 @@ p1{
 
 #menu {
     width: 100%;
-    background-color: #161616;
+    background-color: black;
     margin: 0;
     display: none;
     flex-direction: row;
@@ -252,8 +252,6 @@ footer{
 .linkedin {
     background: #4875b4 none repeat scroll 0 0;
 }
-
-/*pls work*/
 
 /* Optical Illusions
 
