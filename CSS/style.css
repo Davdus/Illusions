@@ -94,7 +94,7 @@ p1{
 
 #menu {
     width: 100%;
-    background-color: #161616;
+    background-color: black;
     margin: 0;
     display: none;
     flex-direction: row;
@@ -180,77 +180,6 @@ a.listitem:hover {
 .backgroundImages {
     width: 100vw;
     height: 100vh;
-}
-
-/* Footer & Co. */
-
-footer{
-    height: 100px;
-    width: 100%;
-    background: #161616;
-    padding: 15px 20px 0 20px;
-}
-
-.share {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.btn.share-btn {
-    border: medium none;
-    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1.2em;
-    margin-top: 6px;
-    margin-right: 7px;
-    opacity: 0.9;
-    outline: medium none;
-    padding: 8px 16px;
-    border-radius: 5px;
-
-}
-.share-btn {
-    color: #ffffff;
-    border: none;
-    padding: 0.5em;
-    width: 3em;
-    opacity: 0.9;
-    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
-    outline: none;
-    text-align: center;
-}
-.share-btn:hover,
-.share-btn:focus {
-    color: #eeeeee;
-}
-.share-btn:active {
-    position: relative;
-    top: 2px;
-    box-shadow: none;
-    color: #e2e2e2;
-    opacity: 1;
-    outline: medium none;
-}
-.twitter {
-    background: #55acee none repeat scroll 0 0;
-}
-.google-plus {
-    background: #dd4b39 none repeat scroll 0 0;
-}
-.facebook {
-    background: #3b5998 none repeat scroll 0 0;
-}
-.stumbleupon {
-    background: #eb4823 none repeat scroll 0 0;
-}
-.reddit {
-    background: #ff5700 none repeat scroll 0 0;
-}
-.linkedin {
-    background: #4875b4 none repeat scroll 0 0;
 }
 
 /* Optical Illusions
