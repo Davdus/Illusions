@@ -75,7 +75,7 @@ $(document).on('scroll', function() {
         parallax.css({"background-image":"url('../IMG/Background1.jpg')"});
     }
     if($(this).scrollTop()>=$('#physiological').position().top){
-        parallax.css({"background-image":"url('../IMG/SpinningCirlces.jpg')"});
+        parallax.css({"background-image":"url('../IMG/clusterfuck.jpg')"});
     }
     if($(this).scrollTop()>=$('#literal').position().top){
         parallax.css({"background-image":"url('../IMG/OldCoupleVisualIllusion.Jpg')"});
@@ -84,7 +84,7 @@ $(document).on('scroll', function() {
         parallax.css({"background-image":"url('../IMG/HalfFace.jpg')"});
     }
     if($(this).scrollTop()>=$('#auditory').position().top){
-        parallax.css({"background-image":"url('../IMG/HalfFace.jpg')"});
+        parallax.css({"background-image":"url('../IMG/auditory.jpg')"});
     }
 })
 function openNav() {
