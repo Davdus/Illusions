@@ -18,7 +18,6 @@ $(document).ready(function () {
             body.css({"overflow": "auto"});
             menu.css({"position": "absolute", "top": $(this).scrollTop(),"display":"flex"});
             menu.fadeIn(500);
-            closeBTN.fadeIn(500);
         }
     }
 
@@ -58,9 +57,33 @@ $(document).ready(function () {
         }, 2000);
     });
 });
-function backgroundchange(position, backgroundimage){
-    var wrapper= $('parallax');
-}
+jQuery(window).scroll(function(){
+    var fromTopPx = 200; // distance to trigger
+    var scrolledFromtop = jQuery(window).scrollTop();
+    if(scrolledFromtop > fromTopPx){
+        jQuery('html').addClass('scrolled');
+    }else{
+        jQuery('html').removeClass('scrolled');
+    }
+});
+$(document).on('scroll', function() {
+    var parallax = $('#parallax')
+    if($(this).scrollTop()>=$('#optical').position().top){
+        parallax.css({"background-image":"url('../IMG/Background1.jpg')"});
+    }
+    if($(this).scrollTop()>=$('#physiological').position().top){
+        parallax.css({"background-image":"url('../IMG/SpinningCirlces.jpg')"});
+    }
+    if($(this).scrollTop()>=$('#literal').position().top){
+        parallax.css({"background-image":"url('../IMG/OldCoupleVisualIllusion.Jpg')"});
+    }
+    if($(this).scrollTop()>=$('#cognitive').position().top){
+        parallax.css({"background-image":"url('../IMG/HalfFace.jpg')"});
+    }
+    if($(this).scrollTop()>=$('#auditory').position().top){
+        parallax.css({"background-image":"url('../IMG/HalfFace.jpg')"});
+    }
+})
 function openNav() {
     document.getElementById("menu").style.width = "30vw";
 }

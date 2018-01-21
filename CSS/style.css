@@ -114,7 +114,10 @@ p1 {
     color: whitesmoke;
     size: 5em;
     border: solid whitesmoke 2px;
-    padding: 15px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 1.5vh 2px 1.5vh 2px;
     text-align: center;
     vertical-align: center;
