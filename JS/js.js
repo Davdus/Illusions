@@ -68,6 +68,9 @@ jQuery(window).scroll(function(){
 });
 $(document).on('scroll', function() {
     var parallax = $('#parallax')
+    if($(this).scrollTop()>=$('#start').position().top){
+        parallax.css({"background-image":"url('../IMG/mandelbrotillusion.jpg')"});
+    }
     if($(this).scrollTop()>=$('#optical').position().top){
         parallax.css({"background-image":"url('../IMG/Background1.jpg')"});
     }
