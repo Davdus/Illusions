@@ -20,12 +20,11 @@ html {
     background-color: white;
     color: black;
     padding: 10%;
-
 }
 
 .exImg {
-    width: 10%;
-    height: 10%;
+    width: 25%;
+    height: 25%;
     float: right;
 }
 
@@ -128,9 +127,23 @@ html {
 #logo {
     width: 7%;
     height: 7%;
-    margin: 0 39% 0 1%;
+    margin: 0 1% 0 1%;
     border-radius: 5px;
     cursor:pointer;
+}
+
+#titlewrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 14% 0 1%;
+}
+
+#title{
+    font-size: xx-large;
+    color: whitesmoke;
+
+
 }
 
 #first {
