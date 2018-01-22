@@ -111,7 +111,7 @@ html {
     border-radius: 4px;
     color: whitesmoke;
     font-weight: bolder;
-    cursor:pointer;
+    cursor: pointer;
     size: 7em;
     border: solid whitesmoke 2px;
     padding: 25px;
@@ -129,20 +129,19 @@ html {
     height: 7%;
     margin: 0 1% 0 1%;
     border-radius: 5px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-#titlewrapper{
-    display:flex;
+#titlewrapper {
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin:0 14% 0 1%;
+    margin: 0 14% 0 1%;
 }
 
-#title{
+#title {
     font-size: xx-large;
     color: whitesmoke;
-
 
 }
 
