@@ -13,8 +13,20 @@
 </head>
 <body id="body">
 <div id="menu">
-    <img src="../IMG/OIlogo.png" id="logo" onclick="scrollToAnchor('start', 1)">
-    <a id="titlewrapper" onclick="scrollToAnchor('start', 1)"><p id="title">Project Illusions</p></a>
+    <a id="titlewrapper" onclick="scrollToAnchor('start', 1)">
+        <img src="../IMG/OIlogo.png" id="logo" onclick="scrollToAnchor('start', 1)">
+        <p id="title">Project Illusions</p></a>
+    <span id="dropDownSpan" onclick="menuDropDown()">
+        <img src="../IMG/verticalclosebutton.png" id="verticalCloseButton">
+    </span>
+    <div id="dropDownList" class="dropDownList">
+        <a class="listitemDrop" onclick="scrollToAnchor('optical', 1)">Optical Illusions</a>
+        <a class="listitemDrop" onclick="scrollToAnchor('physiological', 1)">Physiological Illusions</a>
+        <a class="listitemDrop" onclick="scrollToAnchor('literal', 1)">Literal Illusions</a>
+        <a class="listitemDrop" onclick="scrollToAnchor('cognitive', 1)">Cognitive Illusions</a>
+        <a class="listitemDrop" onclick="scrollToAnchor('auditory', 1)">Auditory Illusions</a>
+    </div>
+
     <a class="listitem" onclick="scrollToAnchor('optical', 1)">Optical Illusions</a>
     <a class="listitem" onclick="scrollToAnchor('physiological', 1)">Physiological Illusions</a>
     <a class="listitem" onclick="scrollToAnchor('literal', 1)">Literal Illusions</a>

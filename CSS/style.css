@@ -102,7 +102,8 @@ html {
     margin: 0;
     display: none;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     overflow-x: hidden;
     z-index: 2000;
@@ -132,10 +133,22 @@ html {
     transition: all 0.3s;
 }
 
+#dropDownSpan{
+    display: none;
+}
+
+#verticalCloseButton{
+    display: none;
+}
+
+#dropDownList{
+    display: none;
+}
+
 #logo {
-    width: 7%;
-    height: 7%;
-    margin: 0 1% 0 1%;
+    width: 25%;
+    height: auto;
+    margin-right: 3%;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -325,3 +338,80 @@ footer {
         font-size: 50px;
     }
 }
+
+@media (max-width:700px){
+
+    .listitem{
+        display: none;
+    }
+    #menu{
+        flex-direction: column;
+    }
+    #title{
+        margin: 0;
+        display: block;
+    }
+    #titlewrapper{
+        margin-top: 1%;
+        display:flex;
+    }
+    #logo{
+        width:10%;
+        height: 10%;
+    }
+
+    #dropDownSpan{
+        background-color: black;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: center;
+    }
+
+    #verticalCloseButton{
+        display: block;
+        width:6%;
+    }
+
+    #dropDownList{
+        display: none;
+    }
+
+    .listitemDrop{
+        width: auto;
+        height: 2.5vh;
+        background-color: black;
+        border-radius: 4px;
+        color: whitesmoke;
+        font-weight: bolder;
+        cursor: pointer;
+        size: 7em;
+        border: solid whitesmoke 2px;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1% 1.2% 1% 1.2%;
+        text-align: center;
+        vertical-align: center;
+        transition: all 0.3s;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
