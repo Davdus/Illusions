@@ -165,6 +165,9 @@ html {
     color: whitesmoke;
     cursor: pointer;
 }
+#responsive{
+    display: none;
+}
 
 #first {
     margin: 1.5vh 0 1.5vh 2px;
@@ -324,11 +327,19 @@ footer {
       display: none;
     }
     #titlewrapper{
-        display:none;
+        display:flex;
+        margin: 0 0 0 1%;
     }
     #logo{
-        width:10%;
-        height: 10%;
+        width:50px;
+
+    }
+    #responsive{
+        display: flex;
+        color: whitesmoke;
+    }
+    #responsivetext{
+        font-size: larger;
     }
     a.listitem:hover{
         background-color: black;
