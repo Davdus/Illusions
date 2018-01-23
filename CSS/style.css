@@ -58,7 +58,9 @@ html {
 /*button styling*/
 #getstartedBTN {
     position: absolute;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: var(--buttonStartedWidth);
     height: 0;
     padding-top: calc(var(--buttonStartedWidth) / 2);
@@ -303,7 +305,40 @@ footer {
     margin: auto;
 }
 
-@media (max-width:1290px){
+@media (max-width:1383px){
+
+    #startimg {
+        background: url("../IMG/Background2.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    /*button styling*/
+    #getstartedBTN {
+        --buttonStartedWidth: 15.5%;
+        width: var(--buttonStartedWidth);
+        height: 0;
+        background-color: white;
+        border: solid 2px black;
+        font-size: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #getstartedBTN:hover ~ #startimg {
+        margin: 0;
+        background: url("../IMG/Background2.jpg") no-repeat center center;
+        background-size: cover !important;
+        width: 100%;
+        height: 100%;
+    }
+
+    #getstartedBTN:hover {
+        --buttonStartedWidth: 15.5%;
+        /*background-color: black;*/
+        transition: 0ms;
+    }
 
     .listitem{
         width: auto;
@@ -335,8 +370,20 @@ footer {
 
     }
     #responsive{
+        width: 99%;
+        background-color: black;
+        margin: 0;
         display: flex;
-        color: whitesmoke;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        overflow-x: hidden;
+        z-index: 2000;
+        padding: 0.5%;
+        top: 0;
+        left: 0;
+        transition-delay: 0s;
     }
     #responsivetext{
         font-size: larger;
@@ -407,6 +454,9 @@ footer {
         text-align: center;
         vertical-align: center;
         transition: all 0.3s;
+    }
+    #responsive{
+        display: none;
     }
 
 }
