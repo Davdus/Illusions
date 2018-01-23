@@ -34,6 +34,14 @@ html {
     --buttonStartedWidth: 14%;
 }
 
+:root:before {
+    content: url(../IMG/startimeffects.png) url(../IMG/mandelbrotillusion.jpg) url(../IMG/HalfFace.jpg) url(../IMG/clusterfuck.jpg) url(../IMG/auditory.jpg) url(../IMG/OldCoupleVisualIllusion.Jpg);
+    background-image: url(../IMG/startim.png);
+    visibility: hidden;
+    position: absolute;
+    left: -999em;
+}
+
 /*Image styling*/
 #startimg {
     display: block;
@@ -142,7 +150,7 @@ html {
 #title {
     font-size: xx-large;
     color: whitesmoke;
-
+    cursor: pointer;
 }
 
 #first {
@@ -277,4 +285,43 @@ footer {
 #backtostartBTN {
     width: 10%;
     margin: auto;
+}
+
+@media (max-width:1290px){
+
+    .listitem{
+        width: auto;
+        height: 2vh;
+        background-color: black;
+        border-radius: 4px;
+        color: whitesmoke;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: smaller;
+        border: solid whitesmoke 2px;
+        padding: 15px;
+        /*margin: 1% 1.2% 1% 1.2%;*/
+    }
+    #menu{
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+    }
+    #title{
+      display: none;
+    }
+    #titlewrapper{
+        display:none;
+    }
+    #logo{
+        width:10%;
+        height: 10%;
+    }
+    a.listitem:hover{
+        background-color: black;
+        color: whitesmoke;
+    }
+    .bigheadings{
+        font-size: 50px;
+    }
 }
