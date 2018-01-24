@@ -167,9 +167,6 @@ html {
     color: whitesmoke;
     cursor: pointer;
 }
-#responsive{
-    display: none;
-}
 
 #first {
     margin: 1.5vh 0 1.5vh 2px;
@@ -305,7 +302,7 @@ footer {
     margin: auto;
 }
 
-@media (max-width:1383px){
+@media (max-width:1290px){
 
     #startimg {
         background: url("../IMG/Background2.jpg");
@@ -368,25 +365,6 @@ footer {
     #logo{
         width:50px;
 
-    }
-    #responsive{
-        width: 99%;
-        background-color: black;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        overflow-x: hidden;
-        z-index: 2000;
-        padding: 0.5%;
-        top: 0;
-        left: 0;
-        transition-delay: 0s;
-    }
-    #responsivetext{
-        font-size: larger;
     }
     a.listitem:hover{
         background-color: black;
