@@ -12,7 +12,7 @@ html {
     width: 100%;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .infoblock {
@@ -41,8 +41,28 @@ html {
     position: absolute;
     left: -999em;
 }
+::-webkit-scrollbar {
+    width: 12px;
+}
 
-/*Image styling*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(1,1,1,0.3);
+    border-radius: 10px;
+    opacity: 0.1;
+}
+::-webkit-resizer{
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    height:30%;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color: lightgrey;
+    opacity:0.1;
+}
+/*
+
 #startimg {
     display: block;
     margin: 0;
@@ -55,7 +75,6 @@ html {
     transition: 500ms;
 }
 
-/*button styling*/
 #getstartedBTN {
     position: absolute;
     display: flex;
@@ -73,11 +92,7 @@ html {
     font-weight: bold;
     line-height: 0;
     text-transform: uppercase;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+
     transition: 500ms;
     outline: none;
 }
@@ -92,27 +107,25 @@ html {
 
 #getstartedBTN:hover {
     --buttonStartedWidth: 15.5%;
-    /*background-color: black;*/
+    /*background-color: black;
     border: solid 2px black;
     font-size: 2vw;
     transition: 500ms;
 }
-
+*/
 #menu {
-    width: 99%;
+    width: 100%;
     background-color: black;
     margin: 0;
-    display: none;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    position: absolute;
+    position: fixed;
     overflow-x: hidden;
     z-index: 2000;
-    padding: 0.5%;
     top: 0;
     left: 0;
-    transition-delay: 0s;
 }
 
 .listitem {
@@ -124,12 +137,12 @@ html {
     font-weight: bolder;
     cursor: pointer;
     size: 7em;
-    border: solid whitesmoke 2px;
-    padding: 25px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1% 1.2% 1% 1.2%;
+    margin: 0 3% 0 3%;
+    border-radius: 0;
     text-align: center;
     vertical-align: center;
     transition: all 0.3s;
@@ -166,6 +179,7 @@ html {
     font-size: xx-large;
     color: whitesmoke;
     cursor: pointer;
+    margin:0;
 }
 
 #first {
@@ -274,7 +288,7 @@ footer {
 }
 
 #overlay {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100%;
@@ -285,16 +299,17 @@ footer {
 
 .transitions {
     width: 80%;
-    height: 80%;
+    height: 0;
     background-color: transparent;
-    padding: 20%;
+    padding: 25%;
+    margin: auto;
 }
 
 .bigheadings {
     font-size: 6.250em;
     font-weight: bolder;
     color: whitesmoke;
-    margin: 0;
+    margin: auto;
 }
 
 #backtostartBTN {
@@ -302,7 +317,7 @@ footer {
     margin: auto;
 }
 
-@media (max-width:1290px){
+@media (max-width:1440px){
 
     #startimg {
         background: url("../IMG/Background2.jpg");
@@ -345,10 +360,10 @@ footer {
         color: whitesmoke;
         font-weight: bold;
         cursor: pointer;
-        font-size: smaller;
-        border: solid whitesmoke 2px;
+        font-size: small;
+        border: 0;
         padding: 15px;
-        /*margin: 1% 1.2% 1% 1.2%;*/
+        margin: 0;
     }
     #menu{
         flex-direction: row;
@@ -356,11 +371,12 @@ footer {
         align-items: center;
     }
     #title{
-      display: none;
+        display: block;
+        font-size: medium;
     }
     #titlewrapper{
         display:flex;
-        margin: 0 0 0 1%;
+        margin: 0 2% 0 0;
     }
     #logo{
         width:50px;
@@ -382,9 +398,11 @@ footer {
     }
     #menu{
         flex-direction: column;
+        transition: 0.5s;
     }
     #title{
         margin: 0;
+        font-size: x-large;
         display: block;
     }
     #titlewrapper{
@@ -408,35 +426,39 @@ footer {
     #verticalCloseButton{
         display: block;
         width:6%;
+        transition: 0.5s;
     }
 
     #dropDownList{
         display: none;
+        margin:auto;
+        width: 100%;
+        transition-delay: 0.5s;
     }
 
     .listitemDrop{
-        width: auto;
+        width: 90%;
         height: 2.5vh;
-        background-color: black;
-        border-radius: 4px;
-        color: whitesmoke;
+        background-color: white;
+        border-radius: 0;
+        color: black;
         font-weight: bolder;
-        cursor: pointer;
-        size: 7em;
-        border: solid whitesmoke 2px;
-        padding: 25px;
+        font-size: 1em;
+        border: 0;
+        padding: 3.5%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 1% 1.2% 1% 1.2%;
-        text-align: center;
-        vertical-align: center;
+        margin: 1% auto 1% auto;
         transition: all 0.3s;
+        text-align: center;
+        transition-delay: 0.5s;
     }
-    #responsive{
-        display: none;
+    .transitions{
     }
-
+    .bigheadings{
+        bottom:50%;
+    }
 }
 
 

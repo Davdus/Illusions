@@ -16,7 +16,7 @@ function scrollToAnchor(aid, aidOffset) {
         $('#dropDownList').css('display', 'none');
     }
 }
-
+/*
 $(document).ready(function () {
     var menu = $('#menu');
     var body = $('#body');
@@ -75,6 +75,7 @@ jQuery(window).scroll(function(){
         jQuery('html').removeClass('scrolled');
     }
 });
+*/
 $(document).on('scroll', function() {
     var parallax = $('#parallax')
     if($(this).scrollTop()>=$('#start').position().top){
